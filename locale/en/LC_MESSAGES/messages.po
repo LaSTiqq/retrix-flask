@@ -84,8 +84,8 @@ msgid ""
 "programmēšanu un specifisku, ar gaismekļiem un sensoriem aprīkotu "
 "produktu izstrādi"
 msgstr ""
-"The company specializes in LED strip lighting installation, programming of control units, "
-"and development of specific products equipped with lights and sensors."
+"The company is involved in the assembly of LED strip lights, "
+"programming of their control units and develops products equipped with lights and sensors"
 
 #: templates/error.html:7
 msgid "Kļūda"
