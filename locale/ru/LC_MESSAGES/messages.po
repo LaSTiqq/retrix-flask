@@ -1,0 +1,226 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-27 02:04+0200\n"
+"PO-Revision-Date: 2025-01-27 02:06+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app.py:46
+msgid "Jūs ievadījāt kaut ko neatļautu! Mēģiniet vēlreiz."
+msgstr "Вы ввели что-то несанкционированное! Попробуйте снова."
+
+#: app.py:58
+msgid "Captcha pārbaude netika izieta. Mēģiniet vēlreiz."
+msgstr "Проверка Captcha не пройдена. Попробуйте снова."
+
+#: app.py:73
+msgid "Vēstule nosūtīta!"
+msgstr "Сообщение отправлено!"
+
+#: app.py:76
+msgid "Kaut kas nogāja greizi! Mēģiniet vēlreiz."
+msgstr "Что-то пошло не так! Попробуйте снова."
+
+#: app.py:111
+msgid "Jūs esat nokļuvis uz neeksistējošu lapu."
+msgstr "Вы попали на несуществующую страницу."
+
+#: app.py:121
+msgid "Radās kļūda un serveris nespēja izpildīt Jūsu pieprasījumu."
+msgstr "Произошла ошибка, и сервер не смог выполнить ваш запрос."
+
+#: forms.py:9
+msgid "Vārds"
+msgstr "Имя"
+
+#: forms.py:12
+msgid "Jānis"
+msgstr "Андрей"
+
+#: forms.py:21 templates/index.html:155
+msgid "E-pasts"
+msgstr "Электронная почта"
+
+#: forms.py:24
+msgid "janis.celotajs@gmail.com"
+msgstr "andrey.petrov@gmail.com"
+
+#: forms.py:33
+msgid "Temats"
+msgstr "Тема"
+
+#: forms.py:36
+msgid "LED gaismas virtuvē"
+msgstr "LED освещение на кухне"
+
+#: forms.py:45
+msgid "Teksts"
+msgstr "Сообщение"
+
+#: forms.py:48
+msgid "Vēlos izgaismot virtuvi, ko Jūs varat piedāvāt?"
+msgstr "Я хотел бы осветить кухню, что Вы можете предложить?"
+
+#: templates/base.html:6
+msgid "Par uzņēmumu"
+msgstr "О компании"
+
+#: templates/base.html:7
+msgid ""
+"Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
+"programmēšanu un specifisku, ar gaismekļiem un sensoriem aprīkotu "
+"produktu izstrādi"
+msgstr ""
+"Компания занимается монтажем LED лент, программированием блоков управления "
+"и разработкой специфичных продуктов, оснащенных светильниками и датчиками"
+
+#: templates/error.html:7
+msgid "Kļūda"
+msgstr "Ошибка"
+
+#: templates/error.html:127
+msgid "Atgriezties"
+msgstr "Вернуться"
+
+#: templates/index.html:14 templates/index.html:43 templates/index.html:48
+#: templates/index.html:62 templates/index.html:69 templates/index.html:122
+#: templates/index.html:127 templates/index.html:140
+msgid "LED apgaismojuma piemērs"
+msgstr "Пример LED освещения"
+
+#: templates/index.html:17
+msgid ""
+"Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
+"programmēšanu"
+msgstr ""
+"Компания занимается установкой LED лент и программированием блоков управления,"
+
+#: templates/index.html:18
+msgid "un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi"
+msgstr "и разработкой специфических продуктов, оснащенных светильниками и датчиками"
+
+#: templates/index.html:25
+msgid "Mūsu"
+msgstr "Наши"
+
+#: templates/index.html:26
+msgid "pakalpojumi"
+msgstr "услуги"
+
+#: templates/index.html:27
+msgid "Virtuves apgaismojuma montāža"
+msgstr "Установка освещения на кухне"
+
+#: templates/index.html:28
+msgid "Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību"
+msgstr "Теплые и холодные белые оттенки, с управлением через выключатель или датчик"
+
+#: templates/index.html:29
+msgid "Krāsainu LED lentu"
+msgstr "Монтаж освещения"
+
+#: templates/index.html:30
+msgid "apgaismojuma montāža"
+msgstr "цветных LED лент"
+
+#: templates/index.html:31
+msgid "Telpās, uz fasādēm un mēbelēm"
+msgstr "В помещениях, на фасадах и мебели"
+
+#: templates/index.html:32
+msgid "Specifisku"
+msgstr "Специфическая"
+
+#: templates/index.html:33
+msgid "produktu izstrāde"
+msgstr "разработка продуктов"
+
+#: templates/index.html:34
+msgid "Ar LED apgaismojumu un sensoriem"
+msgstr "С LED освещением и датчиками"
+
+#: templates/index.html:35 templates/index.html:36
+msgid "Skatīt vairāk"
+msgstr "Смотреть больше"
+
+#: templates/index.html:77
+msgid "Apgaismojuma"
+msgstr "Управление"
+
+#: templates/index.html:78
+msgid "vadība ar slēdzi, sensoru, skārienjutīgu ekrānu vai mobilo lietotni"
+msgstr "освещением с помощью выключателя, датчика, сенсорного экрана или мобильного приложения"
+
+#: templates/inc/_nav.html:13 templates/index.html:86
+msgid "Saziņa"
+msgstr "Связь"
+
+#: templates/index.html:104
+msgid "Nosūtīt"
+msgstr "Отправить"
+
+#: templates/index.html:109
+msgid "Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google"
+msgstr "Этот сайт защищен reCAPTCHA, и он регулируется политикой Google. Такой, как"
+
+#: templates/index.html:111
+msgid "Konfidencialitātes politika"
+msgstr "Политика конфиденциальности"
+
+#: templates/index.html:111
+msgid "un"
+msgstr "и"
+
+#: templates/index.html:113
+msgid "Pakalpojumu sniegšanas noteikumi"
+msgstr "Условия предоставления услуг"
+
+#: templates/inc/_nav.html:14 templates/index.html:145
+msgid "Kontakti"
+msgstr "Контакты"
+
+#: templates/index.html:146
+msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
+msgstr "Принимаем заказы по всей Латвии и за её пределами"
+
+#: templates/index.html:151
+msgid "Tel.nr"
+msgstr "Тел. номер"
+
+#: templates/index.html:159
+msgid "Vienotais reģ.nr"
+msgstr "Единый рег. номер"
+
+#: templates/index.html:163
+msgid "Juridiskā adrese"
+msgstr "Юридический адрес"
+
+#: templates/index.html:167
+msgid "Atrodamies"
+msgstr "Находимся"
+
+#: templates/index.html:168
+msgid "Rīgā un Rēzeknes novadā"
+msgstr "В Риге и Резекненском районе"
+
+#: templates/inc/_foo.html:5
+msgid "Izstrādātājs"
+msgstr "Разработчик"
+
+#: templates/inc/_nav.html:12
+msgid "Pakalpojumi"
+msgstr "Услуги"

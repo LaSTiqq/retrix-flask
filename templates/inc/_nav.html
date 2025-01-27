@@ -1,0 +1,43 @@
+<nav class="navbar navbar-light fixed-top navbar-expand-lg">
+	<div class="container-fluid">
+		<a class="navbar-brand py-0" href="/">
+			<img src="{{ url_for('static', filename='img/logo/logo.svg') }}" alt="Retrix logo" id="logo" />
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+			aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav fw-bold">
+				<li><a class="me-3" href="#services">{{ _('Pakalpojumi') }}</a></li>
+				<li><a class="me-3" href="#communication">{{ _('Saziņa') }}</a></li>
+				<li><a href="#contacts">{{ _('Kontakti') }}</a></li>
+			</ul>
+			<form action="{{ url_for('setlang') }}" method="post" class="ms-auto">
+				<ul class="d-flex languages mt-2 mt-lg-0 mb-0 ps-0">
+					<li class="me-lg-0">
+						<button type="button" value="lv"
+							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'lv' %}active{% endif %}"
+							onclick="location.href='/setlang?lang=lv'">
+							Latviešu
+						</button>
+					</li>
+					<li class="mx-lg-0">
+						<button type="button" value="en"
+							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'en' %}active{% endif %}"
+							onclick="location.href='/setlang?lang=en'">
+							English
+						</button>
+					</li>
+					<li class="ms-lg-0">
+						<button type="button" value="ru"
+							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'ru' %}active{% endif %}"
+							onclick="location.href='/setlang?lang=ru'">
+							Russian
+						</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</nav>

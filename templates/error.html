@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Kļūda') }} {{ error_code }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Montserrat, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4b4b4b, #2e2e2e, #6a0572, #2a034b);
+            /* Gray and Dark Purple */
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: #ff6f61;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(255, 111, 97, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <h1>{{ error_code }}</h1>
+        <h2>{{ error_message }}</h2>
+        <p>{{ error_comment}}</p>
+        <a href="/">{{ _('Atgriezties') }}</a>
+    </div>
+</body>
+
+</html>

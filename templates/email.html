@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 style="text-align: center; margin: 15px 0">Jums pienāca ziņa no
+        <a target="_blank" href="https://www.retrix.lv">retrix.lv</a>
+    </h2>
+    <div style="border: 1px solid black; width: 725px; margin: 0 auto; padding: 15px">
+        <p style="margin: 0 3px"><strong>Sūtītāja vārds: </strong>{{ name }}</p>
+        <p style="margin: 0 3px"><strong>Sūtītāja e-pasts: </strong>
+            <a href="mailto:{{sender}}">{{ sender }}</a>
+        </p>
+        <p style="margin: 0 3px"><strong>Teksts: </strong><br><i>{{ content }}</i></p>
+    </div>
+</body>
+
+</html>

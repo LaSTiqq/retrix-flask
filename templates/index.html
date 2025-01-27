@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- ROW 1 -->
+<div class="row">
+	<div class="col-12 col-md-3 row-1-col-1"></div>
+	<div class="col-12 col-md-3 row-1-col-2 text-center">
+		<h2 class="fw-bold mb-0">SIA</h2>
+		<h2 class="fw-bold my-0">"RETRIX"</h2>
+	</div>
+	<div class="col-12 col-md-6 row-1-col-3">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_2.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_2.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #2" />
+		</picture>
+		<h1 class="text-center">
+			{{ _('Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku programmēšanu') }}
+			{{ _('un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi') }}.</h1>
+	</div>
+</div>
+<!-- ROW 2 -->
+<div class="row">
+	<a name="services" class="anchor-pc"></a>
+	<div class="col-12 col-md-6 col-xxl-6 row-2-col-1 text-center">
+		<h2 class="fw-bold mb-lg-0 mt-3 mt-lg-0">{{ _('Mūsu') }}</h2>
+		<h2 class="fw-bold mt-lg-0">{{ _('pakalpojumi') }}</h2>
+		<h3>{{ _('Virtuves apgaismojuma montāža') }}</h3>
+		<p>{{ _('Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību') }}.</p>
+		<h3 class="mb-0">{{ _('Krāsainu LED lentu') }}</h3>
+		<h3 class="mt-0">{{ _('apgaismojuma montāža') }}</h3>
+		<p>{{ _('Telpās, uz fasādēm un mēbelēm') }}.</p>
+		<h3 class="mb-0">{{ _('Specifisku') }}</h3>
+		<h3 class="mt-0">{{ _('produktu izstrāde') }}</h3>
+		<p>{{ _('Ar LED apgaismojumu un sensoriem') }}.</p>
+		<a href="#gallery" class="btn btn-dark mt-md-2 pc">{{ _('Skatīt vairāk') }}</a>
+		<a href="#gallery_mobile" class="btn btn-dark mt-3 mb-2 mobile">{{ _('Skatīt vairāk') }}</a>
+	</div>
+	<a name="gallery_mobile" class="anchor-mobile"></a>
+	<div class="col-12 col-md-3 col-xxl-2 row-2-col-2">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_3.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_3.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #3" class="image-3" />
+		</picture>
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_4.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_4.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #4" class="image-4" />
+		</picture>
+	</div>
+	<div class="col-12 col-md-3 col-xxl-4 row-2-col-3"></div>
+</div>
+<!-- ROW 3 -->
+<div class="row">
+	<div id="rectangle-1"></div>
+	<a name="gallery" class="anchor-pc"></a>
+	<div class="col-12 col-md-3 col-xxl-4 row-3-col-1"></div>
+	<div class="col-12 col-md-3 col-xxl-2 row-3-col-2">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_5.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_5.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #5" />
+		</picture>
+	</div>
+	<div class="col-12 col-md-6 col-xxl-6 row-3-col-3">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_11.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_11.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #11" />
+		</picture>
+	</div>
+</div>
+<!-- ROW 4 -->
+<div class="row">
+	<div class="col-12 col-md-6 row-4-col-1"></div>
+	<div class="col-12 col-md-3 row-4-col-2 d-flex flex-column justify-content-center text-center">
+		<h2 class="mb-0">{{ _('Apgaismojuma') }}</h2>
+		<h2 class="mb-0">{{ _('vadība ar slēdzi, sensoru, skārienjutīgu ekrānu vai mobilo lietotni') }}</h2>
+	</div>
+	<div class="col-12 col-md-3 row-4-col-3"></div>
+</div>
+<!-- ROW 5-->
+<div class="row">
+	<a name="communication" class="anchor-pc"></a>
+	<div class="col-12 col-md-6 col-xxl-6 row-5-col-1">
+		<h2 class="text-center fw-bold">{{ _('Saziņa') }}</h2>
+		{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+		{% for category, message in messages %}
+		<div class="alert alert-{{ category }} alert-dismissible rounded-pill fw-bold" role="alert">
+			{{ message }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+		<form method="post" class="d-flex flex-column align-items-center" id="contact-form">
+			{{ form.hidden_tag() }}
+			{{ form.name() }}
+			{{ form.email() }}
+			{{ form.subject() }}
+			{{ form.message() }}
+			<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+			<button type="submit" class="btn btn-dark mt-3">{{ _('Nosūtīt') }}</button>
+		</form>
+		<div class="row justify-content-center my-2">
+			<div class="col-8">
+				<small class="text-center d-block fw-bold">
+					{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
+					<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
+						{{ _('Konfidencialitātes politika') }}</a> {{ _('un') }}
+					<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
+						{{ _('Pakalpojumu sniegšanas noteikumi') }}</a>
+				</small>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-md-3 col-xxl-2 row-5-col-2">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_9.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_9.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #9" class="image-9" />
+		</picture>
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_8.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_8.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #8" class="image-8" />
+		</picture>
+	</div>
+	<div class="col-12 col-md-3 col-xxl-4 row-5-col-3"></div>
+</div>
+<!-- ROW 6 -->
+<div class="row">
+	<div id="rectangle-2"></div>
+	<div class="col-12 col-md-3 col-xxl-4 row-6-col-1"></div>
+	<div class="col-12 col-md-3 col-xxl-2 row-6-col-2">
+		<picture>
+			<source srcset="{{ url_for('static', filename='img/samples/sample_10.webp') }}" type="image/webp" />
+			<img src="{{ url_for('static', filename='img/samples/sample_10.jpg') }}"
+				alt="{{ _('LED apgaismojuma piemērs') }} #10" />
+		</picture>
+	</div>
+	<div class="col-12 col-md-6 col-xxl-4 row-6-col-3 text-center">
+		<a name="contacts" class="anchor-pc"></a>
+		<h2 class="fw-bold">{{ _('Kontakti') }}</h2>
+		<h3 class="mb-2">{{ _('Pieņemam pasūtījumus visā Latvijā un ārpus tās') }}.</h3>
+		<p class="mb-1">
+			<span class="fw-bold">SIA "Retrix"</span>
+		</p>
+		<p class="mb-1">
+			<span class="fw-bold">{{ _('Tel.nr') }}</span>:
+			<a href="tel:+37120207735" class="link-info">(+371) 20 207 735</a>
+		</p>
+		<p class="mb-1">
+			<span class="fw-bold">{{ _('E-pasts') }}</span>:
+			<a href="mailto:retrixsia@gmail.com" class="link-info">retrixsia@gmail.com</a>
+		</p>
+		<p class="mb-1">
+			<span class="fw-bold">{{ _('Vienotais reģ.nr') }}</span>:
+			42403042480
+		</p>
+		<p class="mb-1">
+			<span class="fw-bold">{{ _('Juridiskā adrese') }}</span>:
+			3-10, Nagļi, Nagļu pagasts, Rēzeknes novads, LV-4631
+		</p>
+		<p class="mb-3 mb-md-1">
+			<span class="fw-bold">{{ _('Atrodamies') }}</span>:
+			{{ _('Rīgā un Rēzeknes novadā') }}
+		</p>
+	</div>
+	<div class="col-12 col-xxl-2 row-6-col-4"></div>
+</div>
+{% endblock %}

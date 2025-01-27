@@ -1,0 +1,222 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-27 02:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app.py:46
+msgid "Jūs ievadījāt kaut ko neatļautu! Mēģiniet vēlreiz."
+msgstr ""
+
+#: app.py:58
+msgid "Captcha pārbaude netika izieta.  Mēģiniet vēlreiz."
+msgstr ""
+
+#: app.py:73
+msgid "Vēstule nosūtīta!"
+msgstr ""
+
+#: app.py:76
+msgid "Kaut kas nogāja greizi! Mēģiniet vēlreiz."
+msgstr ""
+
+#: app.py:111
+msgid "Jūs esat nokļuvis uz neeksistējošu lapu."
+msgstr ""
+
+#: app.py:121
+msgid "Radās kļūda un serveris nespēja izpildīt Jūsu pieprasījumu."
+msgstr ""
+
+#: forms.py:9
+msgid "Vārds"
+msgstr ""
+
+#: forms.py:12
+msgid "Jānis"
+msgstr ""
+
+#: forms.py:21 templates/index.html:155
+msgid "E-pasts"
+msgstr ""
+
+#: forms.py:24
+msgid "janis.celotajs@gmail.com"
+msgstr ""
+
+#: forms.py:33
+msgid "Temats"
+msgstr ""
+
+#: forms.py:36
+msgid "LED gaismas virtuvē"
+msgstr ""
+
+#: forms.py:45
+msgid "Teksts"
+msgstr ""
+
+#: forms.py:48
+msgid "Vēlos izgaismot virtuvi, ko Jūs varat piedāvāt?"
+msgstr ""
+
+#: templates/base.html:6
+msgid "Par uzņēmumu"
+msgstr ""
+
+#: templates/base.html:7
+msgid ""
+"Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
+"programmēšanu un specifisku, ar gaismekļiem un sensoriem aprīkotu "
+"produktu izstrādi"
+msgstr ""
+
+#: templates/error.html:7
+msgid "Kļūda"
+msgstr ""
+
+#: templates/error.html:127
+msgid "Atgriezties"
+msgstr ""
+
+#: templates/index.html:14 templates/index.html:43 templates/index.html:48
+#: templates/index.html:62 templates/index.html:69 templates/index.html:122
+#: templates/index.html:127 templates/index.html:140
+msgid "LED apgaismojuma piemērs"
+msgstr ""
+
+#: templates/index.html:17
+msgid ""
+"Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
+"programmēšanu"
+msgstr ""
+
+#: templates/index.html:18
+msgid "un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi"
+msgstr ""
+
+#: templates/index.html:25
+msgid "Mūsu"
+msgstr ""
+
+#: templates/index.html:26
+msgid "pakalpojumi"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Virtuves apgaismojuma montāža"
+msgstr ""
+
+#: templates/index.html:28
+msgid "Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību"
+msgstr ""
+
+#: templates/index.html:29
+msgid "Krāsainu LED lentu"
+msgstr ""
+
+#: templates/index.html:30
+msgid "apgaismojuma montāža"
+msgstr ""
+
+#: templates/index.html:31
+msgid "Telpās, uz fasādēm un mēbelēm"
+msgstr ""
+
+#: templates/index.html:32
+msgid "Specifisku"
+msgstr ""
+
+#: templates/index.html:33
+msgid "produktu izstrāde"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Ar LED apgaismojumu un sensoriem"
+msgstr ""
+
+#: templates/index.html:35 templates/index.html:36
+msgid "Skatīt vairāk"
+msgstr ""
+
+#: templates/index.html:77
+msgid "Apgaismojuma"
+msgstr ""
+
+#: templates/index.html:78
+msgid "vadība ar slēdzi, sensoru, skārienjutīgu ekrānu vai mobilo lietotni"
+msgstr ""
+
+#: templates/inc/_nav.html:13 templates/index.html:86
+msgid "Saziņa"
+msgstr ""
+
+#: templates/index.html:104
+msgid "Nosūtīt"
+msgstr ""
+
+#: templates/index.html:109
+msgid "Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google"
+msgstr ""
+
+#: templates/index.html:111
+msgid "Konfidencialitātes politika"
+msgstr ""
+
+#: templates/index.html:111
+msgid "un"
+msgstr ""
+
+#: templates/index.html:113
+msgid "Pakalpojumu sniegšanas noteikumi"
+msgstr ""
+
+#: templates/inc/_nav.html:14 templates/index.html:145
+msgid "Kontakti"
+msgstr ""
+
+#: templates/index.html:146
+msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
+msgstr ""
+
+#: templates/index.html:151
+msgid "Tel.nr"
+msgstr ""
+
+#: templates/index.html:159
+msgid "Vienotais reģ.nr"
+msgstr ""
+
+#: templates/index.html:163
+msgid "Juridiskā adrese"
+msgstr ""
+
+#: templates/index.html:167
+msgid "Atrodamies"
+msgstr ""
+
+#: templates/index.html:168
+msgid "Rīgā un Rēzeknes novadā"
+msgstr ""
+
+#: templates/inc/_foo.html:5
+msgid "Izstrādātājs"
+msgstr ""
+
+#: templates/inc/_nav.html:12
+msgid "Pakalpojumi"
+msgstr ""
+
