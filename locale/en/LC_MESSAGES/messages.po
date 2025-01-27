@@ -106,11 +106,11 @@ msgid ""
 "Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
 "programmēšanu"
 msgstr ""
-"The company specializes in LED strip lighting installation and programming of control units"
+"The company is involved in the assembly of LED strip lights, programming of their control units"
 
 #: templates/index.html:18
 msgid "un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi"
-msgstr "and development of specific products equipped with lights and sensors"
+msgstr "and develops products equipped with lights and sensors"
 
 #: templates/index.html:25
 msgid "Mūsu"
@@ -122,23 +122,23 @@ msgstr "services"
 
 #: templates/index.html:27
 msgid "Virtuves apgaismojuma montāža"
-msgstr "Kitchen lighting installation"
+msgstr "Kitchen lighting assembly"
 
 #: templates/index.html:28
 msgid "Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību"
-msgstr "Warm and cool white tones, with switch or sensor control"
+msgstr "Warm and cool white tones, controlled by switch or sensor"
 
 #: templates/index.html:29
 msgid "Krāsainu LED lentu"
-msgstr "Colored LED strip"
+msgstr "Lighting assembly"
 
 #: templates/index.html:30
 msgid "apgaismojuma montāža"
-msgstr "lighting installation"
+msgstr "of colored LED strips"
 
 #: templates/index.html:31
 msgid "Telpās, uz fasādēm un mēbelēm"
-msgstr "Indoors, on facades and furniture"
+msgstr "Indoors, on facades and on furniture"
 
 #: templates/index.html:32
 msgid "Specifisku"
@@ -170,7 +170,7 @@ msgstr "Communication"
 
 #: templates/index.html:104
 msgid "Nosūtīt"
-msgstr "Send"
+msgstr "Submit"
 
 #: templates/index.html:109
 msgid "Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google"
@@ -198,11 +198,11 @@ msgstr "We accept orders throughout Latvia and beyond"
 
 #: templates/index.html:151
 msgid "Tel.nr"
-msgstr "Phone number"
+msgstr "Phone"
 
 #: templates/index.html:159
 msgid "Vienotais reģ.nr"
-msgstr "Unified reg. no."
+msgstr "Reg. no."
 
 #: templates/index.html:163
 msgid "Juridiskā adrese"
@@ -210,11 +210,11 @@ msgstr "Legal address"
 
 #: templates/index.html:167
 msgid "Atrodamies"
-msgstr "Located at"
+msgstr "Located in"
 
 #: templates/index.html:168
 msgid "Rīgā un Rēzeknes novadā"
-msgstr "In Riga and the Rezekne district"
+msgstr "Riga and the Rezekne district"
 
 #: templates/inc/_foo.html:5
 msgid "Izstrādātājs"

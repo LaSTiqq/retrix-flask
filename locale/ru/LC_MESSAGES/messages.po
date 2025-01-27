@@ -53,7 +53,7 @@ msgstr "Андрей"
 
 #: forms.py:21 templates/index.html:155
 msgid "E-pasts"
-msgstr "Электронная почта"
+msgstr "Почта"
 
 #: forms.py:24
 msgid "janis.celotajs@gmail.com"
@@ -107,11 +107,11 @@ msgid ""
 "Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
 "programmēšanu"
 msgstr ""
-"Компания занимается установкой LED лент и программированием блоков управления,"
+"Компания занимается сборкой светодиодных LED лент, программированием их блоков управления"
 
 #: templates/index.html:18
 msgid "un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi"
-msgstr "и разработкой специфических продуктов, оснащенных светильниками и датчиками"
+msgstr "и разрабатывает специфичные изделия, оснащенные светильниками и датчиками"
 
 #: templates/index.html:25
 msgid "Mūsu"
@@ -123,11 +123,11 @@ msgstr "услуги"
 
 #: templates/index.html:27
 msgid "Virtuves apgaismojuma montāža"
-msgstr "Установка освещения на кухне"
+msgstr "Монтаж кухонного освещения"
 
 #: templates/index.html:28
 msgid "Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību"
-msgstr "Теплые и холодные белые оттенки, с управлением через выключатель или датчик"
+msgstr "Теплые и холодные белые тона, управляемые переключателем или датчиком"
 
 #: templates/index.html:29
 msgid "Krāsainu LED lentu"
@@ -143,11 +143,11 @@ msgstr "В помещениях, на фасадах и мебели"
 
 #: templates/index.html:32
 msgid "Specifisku"
-msgstr "Специфическая"
+msgstr "Разработка"
 
 #: templates/index.html:33
 msgid "produktu izstrāde"
-msgstr "разработка продуктов"
+msgstr "специфичных продуктов"
 
 #: templates/index.html:34
 msgid "Ar LED apgaismojumu un sensoriem"
@@ -163,7 +163,7 @@ msgstr "Управление"
 
 #: templates/index.html:78
 msgid "vadība ar slēdzi, sensoru, skārienjutīgu ekrānu vai mobilo lietotni"
-msgstr "освещением с помощью выключателя, датчика, сенсорного экрана или мобильного приложения"
+msgstr "освещением переключателем, датчиком, тачскрин экраном или мобильным приложением"
 
 #: templates/inc/_nav.html:13 templates/index.html:86
 msgid "Saziņa"
@@ -195,27 +195,27 @@ msgstr "Контакты"
 
 #: templates/index.html:146
 msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
-msgstr "Принимаем заказы по всей Латвии и за её пределами"
+msgstr "Принимаем заказы по всей Латвии и вне её"
 
 #: templates/index.html:151
 msgid "Tel.nr"
-msgstr "Тел. номер"
+msgstr "Номер"
 
 #: templates/index.html:159
 msgid "Vienotais reģ.nr"
-msgstr "Единый рег. номер"
+msgstr "Рег. но"
 
 #: templates/index.html:163
 msgid "Juridiskā adrese"
-msgstr "Юридический адрес"
+msgstr "Юр. адрес"
 
 #: templates/index.html:167
 msgid "Atrodamies"
-msgstr "Находимся"
+msgstr "Находимся в"
 
 #: templates/index.html:168
 msgid "Rīgā un Rēzeknes novadā"
-msgstr "В Риге и Резекненском районе"
+msgstr "Риге и Резекненском районе"
 
 #: templates/inc/_foo.html:5
 msgid "Izstrādātājs"

@@ -65,7 +65,7 @@ def index():
             msg = Message(
                 subject=form.subject.data,
                 sender=app.config['MAIL_USERNAME'],
-                recipients=['lavrencij@inbox.lv'],
+                recipients=['retrixsia@gmail.com'],
                 body=text_content
             )
             msg.html = html_content
