@@ -72,7 +72,7 @@ def index():
             mail.send(msg)
             flash(_("Vēstule nosūtīta!"), "success")
             return redirect(url_for("index") + '/#communication')
-        except Exception as e:
+        except Exception:
             flash(_("Kaut kas nogāja greizi! Mēģiniet vēlreiz."), "danger")
             return redirect(url_for("index") + '/#communication')
     return render_template('index.html', form=form, current_year=current_year, current_locale=get_locale())
