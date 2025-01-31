@@ -5,7 +5,7 @@ from flask_talisman import Talisman
 from flask_mail import Message, Mail
 from flask_babel import Babel, lazy_gettext as _
 from config import Config
-from utils import restricted_list, year
+from utils import restricted_list, year, redirect_with_anchor
 from forms import ContactForm
 import requests
 import re
@@ -44,7 +44,7 @@ def index():
     if form.validate_on_submit():
         if any(restricted_list(form[field].data) for field in ['name', 'subject', 'message']):
             flash(_("Jūs ievadījāt kaut ko neatļautu! Mēģiniet vēlreiz."), "warning")
-            return redirect(url_for("index") + '/#communication')
+            return redirect_with_anchor("communication")
 
         recaptcha_response = request.form.get('g-recaptcha-response')
         secret_key = os.getenv('RECAPTCHA_PRIVATE_KEY')
@@ -56,7 +56,7 @@ def index():
         result = response.json()
         if not result.get('success') or result.get('score', 0) < app.config['RECAPTCHA_REQUIRED_SCORE']:
             flash(_("Captcha pārbaude netika izieta.  Mēģiniet vēlreiz."), "danger")
-            return redirect(url_for("index") + '/#communication')
+            return redirect_with_anchor("communication")
 
         html_content = render_template("email.html", name=form.name.data,
                                        sender=form.email.data, content=form.message.data)
@@ -71,10 +71,10 @@ def index():
             msg.html = html_content
             mail.send(msg)
             flash(_("Vēstule nosūtīta!"), "success")
-            return redirect(url_for("index") + '/#communication')
+            return redirect_with_anchor("communication")
         except Exception:
             flash(_("Kaut kas nogāja greizi! Mēģiniet vēlreiz."), "danger")
-            return redirect(url_for("index") + '/#communication')
+            return redirect_with_anchor("communication")
     return render_template('index.html', form=form, current_year=current_year, current_locale=get_locale())
 
 
