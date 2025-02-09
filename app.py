@@ -20,6 +20,9 @@ flask_static_digest.init_app(app)
 
 
 def get_locale():
+    lang = request.args.get('lang')
+    if lang in ['lv', 'en', 'ru']:
+        return lang
     if 'lang' in session:
         return session['lang']
     return request.accept_languages.best_match(['lv', 'en', 'ru']) or 'lv'
