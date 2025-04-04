@@ -56,7 +56,7 @@ def index():
                                  'secret': secret_key, 'response': recaptcha_response})
         result = response.json()
         if not result.get('success') or result.get('score', 0) < app.config['RECAPTCHA_REQUIRED_SCORE']:
-            flash(_("Captcha pārbaude netika izieta.  Mēģiniet vēlreiz."), "danger")
+            flash(_("Captcha pārbaude netika izieta. Mēģiniet vēlreiz."), "danger")
             return redirect_with_anchor("communication")
 
         html_content = render_template(
