@@ -36,7 +36,7 @@
 			<a href="#gallery" class="btn btn-dark mt-md-2 d-none d-md-block">{{ _('Skatīt vairāk') }}</a>
 			<a href="#gallery_mobile" class="btn btn-dark mt-3 mb-2 d-block d-md-none">{{ _('Skatīt vairāk') }}</a>
 		</div>
-		<a name="gallery_mobile" class="anchor-mobile"></a>
+		<a name="gallery_mobile" class="d-block d-md-none"></a>
 		<div class="col-12 col-md-3 col-xxl-2 row-2-col-2">
 			<picture>
 				<source srcset="{{ url_for('static', filename='img/samples/sample_3.webp') }}" type="image/webp" />
@@ -55,7 +55,7 @@
 <section class="gallery">
 	<div class="row">
 		<div id="rectangle-1"></div>
-		<a name="gallery" class="anchor-pc"></a>
+		<a name="gallery" class="d-none d-md-block"></a>
 		<div class="col-12 col-md-3 col-xxl-4 row-3-col-1"></div>
 		<div class="col-12 col-md-3 col-xxl-2 row-3-col-2">
 			<picture>
@@ -98,23 +98,59 @@
 			{% endfor %}
 			{% endif %}
 			{% endwith %}
-			<form method="post" class="d-flex flex-column align-items-center" id="contact-form">
+			<form method="post" class="d-flex flex-column align-items-center was-validated" id="contact-form">
 				{{ form.hidden_tag() }}
-				{{ form.name() }}
-				{{ form.email() }}
-				{{ form.subject() }}
-				{{ form.message() }}
+				<div class="form-floating">
+					{{ form.name() }}
+					<label for="name">{{ _('Vārds') }}<span class="text-danger">*</span></label>
+					<div class="valid-feedback">
+						OK!
+					</div>
+					<div class="invalid-feedback">
+						{{ _('Lūdzu, ievadiet derīgu vārdu!') }}
+					</div>
+				</div>
+				<div class="form-floating">
+					{{ form.email() }}
+					<label for="email">{{ _('E-pasts') }}<span class="text-danger">*</span></label>
+					<div class="valid-feedback">
+						OK!
+					</div>
+					<div class="invalid-feedback">
+						{{ _('Lūdzu, ievadiet derīgu e-pasta adresi!') }}
+					</div>
+				</div>
+				<div class="form-floating">
+					{{ form.subject() }}
+					<label for="subject">{{ _('Temats') }}<span class="text-danger">*</span></label>
+					<div class="valid-feedback">
+						OK!
+					</div>
+					<div class="invalid-feedback">
+						{{ _('Lūdzu, ievadiet derīgu tematu!') }}
+					</div>
+				</div>
+				<div class="form-floating">
+					{{ form.message() }}
+					<label for="message">{{ _('Ziņojums') }}<span class="text-danger">*</span></label>
+					<div class="valid-feedback">
+						OK!
+					</div>
+					<div class="invalid-feedback text-center">
+						{{ _('Lūdzu, ievadiet derīgu ziņu') }} <br> {{ _('vismaz 20 simbolu garumā!') }}
+					</div>
+				</div>
 				<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-				<button type="submit" class="btn btn-dark mt-3">{{ _('Nosūtīt') }}</button>
+				<button type="submit" class="btn btn-dark mt-2">{{ _('Nosūtīt') }}</button>
 			</form>
 			<div class="row justify-content-center my-2">
 				<div class="col-8">
 					<small class="text-center d-block fw-bold">
 						{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
 						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
-							{{ _('Konfidencialitātes politika') }}</a> {{ _('un') }}
+							{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
 						<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
-							{{ _('Pakalpojumu sniegšanas noteikumi') }}.</a>
+							{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
 					</small>
 				</div>
 			</div>

@@ -7,10 +7,12 @@ from flask_babel import lazy_gettext as _
 class ContactForm(FlaskForm):
     name = StringField(
         label=_('Vārds'),
+        id='name',
         render_kw={
-            'class': 'form-control bg-transparent mb-2',
-            'placeholder': _('Jānis'),
+            'class': 'form-control bg-transparent',
+            'placeholder': _('Vārds'),
             'autocomplete': 'off',
+            'value': _('Jānis'),
         },
         validators=[
             DataRequired(),
@@ -19,10 +21,12 @@ class ContactForm(FlaskForm):
     )
     email = EmailField(
         label=_('E-pasts'),
+        id='email',
         render_kw={
-            'class': 'form-control bg-transparent mb-2',
-            'placeholder': _('janis.celotajs@gmail.com'),
+            'class': 'form-control bg-transparent',
+            'placeholder': _('E-pasts'),
             'autocomplete': 'off',
+            'value': _('janis.celotajs@gmail.com'),
         },
         validators=[
             DataRequired(),
@@ -31,10 +35,12 @@ class ContactForm(FlaskForm):
     )
     subject = StringField(
         label=_('Temats'),
+        id='subject',
         render_kw={
-            'class': 'form-control bg-transparent mb-2',
-            'placeholder': _('LED gaismas virtuvē'),
+            'class': 'form-control bg-transparent',
+            'placeholder': _('Temats'),
             'autocomplete': 'off',
+            'value': _('Apgaismojums virtuvē'),
         },
         validators=[
             DataRequired(),
@@ -42,15 +48,15 @@ class ContactForm(FlaskForm):
         ],
     )
     message = TextAreaField(
-        label=_('Teksts'),
+        label=_('Ziņojums'),
+        id='message',
         render_kw={
-            'class': 'form-control bg-transparent pt-3',
-            'placeholder': _('Vēlos izgaismot virtuvi, ko Jūs varat piedāvāt?'),
+            'class': 'form-control bg-transparent',
+            'placeholder': _('Ziņojums'),
             'autocomplete': 'off',
-            'rows': 6,
         },
         validators=[
             DataRequired(),
-            Length(min=50)
+            Length(min=20)
         ],
     )

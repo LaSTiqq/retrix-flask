@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-27 02:04+0200\n"
-"PO-Revision-Date: 2025-01-27 02:06+0200\n"
+"POT-Creation-Date: 2025-06-21 23:09+0300\n"
+"PO-Revision-Date: 2025-06-21 21:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -16,63 +16,59 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: app.py:46
+#: app.py:49
 msgid "Jūs ievadījāt kaut ko neatļautu! Mēģiniet vēlreiz."
-msgstr "You entered something unauthorized! Please try again."
+msgstr "You entered something disallowed! Please try again."
 
-#: app.py:58
+#: app.py:59
 msgid "Captcha pārbaude netika izieta. Mēģiniet vēlreiz."
-msgstr "Captcha verification was not passed. Please try again."
+msgstr "Captcha verification failed. Please try again."
 
-#: app.py:73
+#: app.py:74
 msgid "Vēstule nosūtīta!"
-msgstr "Message sent!"
+msgstr "Email sent!"
 
-#: app.py:76
+#: app.py:77
 msgid "Kaut kas nogāja greizi! Mēģiniet vēlreiz."
 msgstr "Something went wrong! Please try again."
 
-#: app.py:111
+#: app.py:119
 msgid "Jūs esat nokļuvis uz neeksistējošu lapu."
-msgstr "You have reached a non-existent page."
+msgstr "You've reached a non-existent page."
 
-#: app.py:121
+#: app.py:130
 msgid "Radās kļūda un serveris nespēja izpildīt Jūsu pieprasījumu."
-msgstr "An error occurred, and the server was unable to fulfill your request."
+msgstr "There was an error and the server could not fulfill your request."
 
-#: forms.py:9
+#: forms.py:9 forms.py:13 templates/index.html:105
 msgid "Vārds"
 msgstr "Name"
 
-#: forms.py:12
+#: forms.py:15
 msgid "Jānis"
 msgstr "John"
 
-#: forms.py:21 templates/index.html:155
+#: forms.py:23 forms.py:27 templates/index.html:115 templates/index.html:196
 msgid "E-pasts"
 msgstr "Email"
 
-#: forms.py:24
+#: forms.py:29
 msgid "janis.celotajs@gmail.com"
 msgstr "john.doe@gmail.com"
 
-#: forms.py:33
+#: forms.py:37 forms.py:41 templates/index.html:125
 msgid "Temats"
 msgstr "Subject"
 
-#: forms.py:36
-msgid "LED gaismas virtuvē"
-msgstr "LED lighting in the kitchen"
+#: forms.py:43
+msgid "Apgaismojums virtuvē"
+msgstr "Kitchen lighting"
 
-#: forms.py:45
-msgid "Teksts"
+#: forms.py:51 forms.py:55 templates/index.html:135
+msgid "Ziņojums"
 msgstr "Message"
-
-#: forms.py:48
-msgid "Vēlos izgaismot virtuvi, ko Jūs varat piedāvāt?"
-msgstr "I would like to light up the kitchen, what can you offer?"
 
 #: templates/base.html:6
 msgid "Par uzņēmumu"
@@ -84,8 +80,9 @@ msgid ""
 "programmēšanu un specifisku, ar gaismekļiem un sensoriem aprīkotu "
 "produktu izstrādi"
 msgstr ""
-"The company is involved in the assembly of LED strip lights, "
-"programming of their control units and develops products equipped with lights and sensors"
+"The company is involved in the assembly of LED strip lights, programming "
+"of their control units and develops products equipped with lights and "
+"sensors"
 
 #: templates/error.html:7
 msgid "Kļūda"
@@ -95,9 +92,9 @@ msgstr "Error"
 msgid "Atgriezties"
 msgstr "Go back"
 
-#: templates/index.html:14 templates/index.html:43 templates/index.html:48
-#: templates/index.html:62 templates/index.html:69 templates/index.html:122
-#: templates/index.html:127 templates/index.html:140
+#: templates/index.html:14 templates/index.html:44 templates/index.html:49
+#: templates/index.html:64 templates/index.html:71 templates/index.html:162
+#: templates/index.html:167 templates/index.html:181
 msgid "LED apgaismojuma piemērs"
 msgstr "LED lighting example"
 
@@ -106,113 +103,134 @@ msgid ""
 "Uzņēmums nodarbojas ar LED lentu apgaismojuma montāžu, to vadības bloku "
 "programmēšanu"
 msgstr ""
-"The company is involved in the assembly of LED strip lights, programming of their control units"
+"The company is involved in the assembly of LED strip lights, programming "
+"of their control units"
 
 #: templates/index.html:18
 msgid "un specifisku, ar gaismekļiem un sensoriem aprīkotu produktu izstrādi"
 msgstr "and develops products equipped with lights and sensors"
 
-#: templates/index.html:25
+#: templates/index.html:26
 msgid "Mūsu"
 msgstr "Our"
 
-#: templates/index.html:26
+#: templates/index.html:27
 msgid "pakalpojumi"
 msgstr "services"
 
-#: templates/index.html:27
+#: templates/index.html:28
 msgid "Virtuves apgaismojuma montāža"
 msgstr "Kitchen lighting assembly"
 
-#: templates/index.html:28
+#: templates/index.html:29
 msgid "Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību"
 msgstr "Warm and cool white tones, controlled by switch or sensor"
 
-#: templates/index.html:29
+#: templates/index.html:30
 msgid "Krāsainu LED lentu"
 msgstr "Lighting assembly"
 
-#: templates/index.html:30
+#: templates/index.html:31
 msgid "apgaismojuma montāža"
 msgstr "of colored LED strips"
 
-#: templates/index.html:31
+#: templates/index.html:32
 msgid "Telpās, uz fasādēm un mēbelēm"
 msgstr "Indoors, on facades and on furniture"
 
-#: templates/index.html:32
+#: templates/index.html:33
 msgid "Specifisku"
 msgstr "Specific"
 
-#: templates/index.html:33
+#: templates/index.html:34
 msgid "produktu izstrāde"
 msgstr "product development"
 
-#: templates/index.html:34
+#: templates/index.html:35
 msgid "Ar LED apgaismojumu un sensoriem"
 msgstr "With LED lighting and sensors"
 
-#: templates/index.html:35 templates/index.html:36
+#: templates/index.html:36 templates/index.html:37
 msgid "Skatīt vairāk"
 msgstr "See more"
 
-#: templates/index.html:77
+#: templates/index.html:80
 msgid "Apgaismojuma"
 msgstr "Lighting"
 
-#: templates/index.html:78
+#: templates/index.html:81
 msgid "vadība ar slēdzi, sensoru, skārienjutīgu ekrānu vai mobilo lietotni"
 msgstr "control with a switch, sensor, touchscreen, or mobile app"
 
-#: templates/inc/_nav.html:13 templates/index.html:86
+#: templates/inc/_nav.html:13 templates/index.html:90
 msgid "Saziņa"
 msgstr "Communication"
 
-#: templates/index.html:104
+#: templates/index.html:110
+msgid "Lūdzu, ievadiet derīgu vārdu!"
+msgstr "Please enter a valid name!"
+
+#: templates/index.html:120
+msgid "Lūdzu, ievadiet derīgu e-pasta adresi!"
+msgstr "Please enter a valid email address!"
+
+#: templates/index.html:130
+msgid "Lūdzu, ievadiet derīgu tematu!"
+msgstr "Please enter a valid subject!"
+
+#: templates/index.html:140
+msgid "Lūdzu, ievadiet derīgu ziņu"
+msgstr "Please enter a valid message"
+
+#: templates/index.html:140
+msgid "vismaz 20 simbolu garumā!"
+msgstr "at least 20 characters long!"
+
+#: templates/index.html:144
 msgid "Nosūtīt"
 msgstr "Submit"
 
-#: templates/index.html:109
+#: templates/index.html:149
 msgid "Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google"
-msgstr "This site is protected by reCAPTCHA and the Google "
+msgstr "This site is protected by reCAPTCHA and the Google"
 
-#: templates/index.html:111
-msgid "Konfidencialitātes politika"
+#: templates/index.html:151
+msgid "Konfidencialitātes Politika"
 msgstr "Privacy Policy"
 
-#: templates/index.html:111
+#: templates/index.html:151
 msgid "un"
 msgstr "and"
 
-#: templates/index.html:113
-msgid "Pakalpojumu sniegšanas noteikumi"
+#: templates/index.html:153
+msgid "Pakalpojumu Sniegšanas noteikumi"
 msgstr "Terms of Service apply"
 
-#: templates/inc/_nav.html:14 templates/index.html:145
+#: templates/inc/_nav.html:14 templates/index.html:186
 msgid "Kontakti"
 msgstr "Contacts"
 
-#: templates/index.html:146
+#: templates/index.html:187
 msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
 msgstr "We accept orders throughout Latvia and beyond"
 
-#: templates/index.html:151
+#: templates/index.html:192
 msgid "Tel.nr"
 msgstr "Phone"
 
-#: templates/index.html:159
+#: templates/index.html:200
 msgid "Vienotais reģ.nr"
 msgstr "Reg. no."
 
-#: templates/index.html:163
+#: templates/index.html:204
 msgid "Juridiskā adrese"
 msgstr "Legal address"
 
-#: templates/index.html:167
+#: templates/index.html:208
 msgid "Atrodamies"
 msgstr "Located in"
 
-#: templates/index.html:168
+#: templates/index.html:209
 msgid "Rīgā un Rēzeknes novadā"
 msgstr "Riga and the Rezekne district"
 
