@@ -23,7 +23,7 @@
 	<div class="row">
 		<a name="services" class="anchor-pc"></a>
 		<div class="col-12 col-md-6 col-xxl-6 row-2-col-1 text-center">
-			<h2 class="fw-bold mb-lg-0 mt-3 mt-lg-0">{{ _('Mūsu') }}</h2>
+			<h2 class="fw-bold mb-0 mt-3 mt-lg-0">{{ _('Mūsu') }}</h2>
 			<h2 class="fw-bold mt-lg-0">{{ _('pakalpojumi') }}</h2>
 			<h3>{{ _('Virtuves apgaismojuma montāža') }}</h3>
 			<p>{{ _('Siltie un aukstie baltie toņi, ar slēdža vai sensora vadību') }}.</p>
@@ -34,9 +34,9 @@
 			<h3 class="mt-0">{{ _('produktu izstrāde') }}</h3>
 			<p>{{ _('Ar LED apgaismojumu un sensoriem') }}.</p>
 			<a href="#gallery" class="btn btn-dark mt-md-2 d-none d-md-block">{{ _('Skatīt vairāk') }}</a>
-			<a href="#gallery_mobile" class="btn btn-dark mt-3 mb-2 d-block d-md-none">{{ _('Skatīt vairāk') }}</a>
+			<a href="#gallery_mobile" class="btn btn-dark mt-md-2 mb-2 d-block d-md-none">{{ _('Skatīt vairāk') }}</a>
 		</div>
-		<a name="gallery_mobile" class="d-block d-md-none"></a>
+		<a name="gallery_mobile" class="anchor-mobile d-block d-md-none"></a>
 		<div class="col-12 col-md-3 col-xxl-2 row-2-col-2">
 			<picture>
 				<source srcset="{{ url_for('static', filename='img/samples/sample_3.webp') }}" type="image/webp" />
@@ -55,8 +55,8 @@
 <section class="gallery">
 	<div class="row">
 		<div id="rectangle-1"></div>
-		<a name="gallery" class="d-none d-md-block"></a>
-		<div class="col-12 col-md-3 col-xxl-4 row-3-col-1"></div>
+		<a name="gallery" class="anchor-pc d-none d-md-block"></a>
+		<div class="d-none d-md-block col-md-3 col-xxl-4 row-3-col-1"></div>
 		<div class="col-12 col-md-3 col-xxl-2 row-3-col-2">
 			<picture>
 				<source srcset="{{ url_for('static', filename='img/samples/sample_5.webp') }}" type="image/webp" />
@@ -86,7 +86,7 @@
 <section class="contact_us">
 	<div class="row">
 		<a name="communication" class="anchor-pc"></a>
-		<div class="col-12 col-md-6 col-xxl-6 row-5-col-1">
+		<div class="col-12 col-md-6 col-xxl-6 row-5-col-1 d-flex flex-column align-items-center">
 			<h2 class="text-center fw-bold">{{ _('Saziņa') }}</h2>
 			{% with messages = get_flashed_messages(with_categories=true) %}
 			{% if messages %}
@@ -98,7 +98,7 @@
 			{% endfor %}
 			{% endif %}
 			{% endwith %}
-			<form method="post" class="d-flex flex-column align-items-center was-validated" id="contact-form">
+			<form method="post" class="was-validated" id="contact-form">
 				{{ form.hidden_tag() }}
 				<div class="form-floating">
 					{{ form.name() }}
@@ -137,22 +137,20 @@
 						OK!
 					</div>
 					<div class="invalid-feedback text-center">
-						{{ _('Lūdzu, ievadiet derīgu ziņu') }} <br> {{ _('vismaz 20 simbolu garumā!') }}
+						{{ _('Lūdzu, ievadiet derīgu ziņu vismaz 20 simbolu garumā!') }}
 					</div>
 				</div>
 				<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-				<button type="submit" class="btn btn-dark mt-2">{{ _('Nosūtīt') }}</button>
+				<button type="submit" class="btn btn-dark d-block mx-auto my-2">{{ _('Nosūtīt') }}</button>
 			</form>
-			<div class="row justify-content-center my-2">
-				<div class="col-8">
-					<small class="text-center d-block fw-bold">
-						{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
-						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
-							{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
-						<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
-							{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
-					</small>
-				</div>
+			<div class="col-md-8">
+				<small class="text-center d-block fw-bold mb-2 mb-xl-0">
+					{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
+					<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
+						{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
+					<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
+						{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
+				</small>
 			</div>
 		</div>
 		<div class="col-12 col-md-3 col-xxl-2 row-5-col-2">
@@ -173,7 +171,7 @@
 <section class="contacts">
 	<div class="row">
 		<div id="rectangle-2"></div>
-		<div class="col-12 col-md-3 col-xxl-4 row-6-col-1"></div>
+		<div class="d-none d-md-block col-md-3 col-xxl-4 row-6-col-1"></div>
 		<div class="col-12 col-md-3 col-xxl-2 row-6-col-2">
 			<picture>
 				<source srcset="{{ url_for('static', filename='img/samples/sample_10.webp') }}" type="image/webp" />

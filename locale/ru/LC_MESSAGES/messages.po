@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-21 23:09+0300\n"
+"POT-Creation-Date: 2025-06-22 21:16+0300\n"
 "PO-Revision-Date: 2025-06-21 21:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -51,7 +51,7 @@ msgstr "Имя"
 msgid "Jānis"
 msgstr "Андрей"
 
-#: forms.py:23 forms.py:27 templates/index.html:115 templates/index.html:196
+#: forms.py:23 forms.py:27 templates/index.html:115 templates/index.html:192
 msgid "E-pasts"
 msgstr "Почта"
 
@@ -94,8 +94,8 @@ msgid "Atgriezties"
 msgstr "Вернуться"
 
 #: templates/index.html:14 templates/index.html:44 templates/index.html:49
-#: templates/index.html:64 templates/index.html:71 templates/index.html:162
-#: templates/index.html:167 templates/index.html:181
+#: templates/index.html:64 templates/index.html:71 templates/index.html:158
+#: templates/index.html:163 templates/index.html:177
 msgid "LED apgaismojuma piemērs"
 msgstr "Пример LED освещения"
 
@@ -182,58 +182,54 @@ msgid "Lūdzu, ievadiet derīgu tematu!"
 msgstr "Пожалуйста, введите корректную тему!"
 
 #: templates/index.html:140
-msgid "Lūdzu, ievadiet derīgu ziņu"
-msgstr "Пожалуйста, введите корректное сообщение"
-
-#: templates/index.html:140
-msgid "vismaz 20 simbolu garumā!"
-msgstr "длиной не менее 20 символов!"
+msgid "Lūdzu, ievadiet derīgu ziņu vismaz 20 simbolu garumā!"
+msgstr "Пожалуйста, введите корректное сообщение длиной не менее 20 символов!"
 
 #: templates/index.html:144
 msgid "Nosūtīt"
 msgstr "Отправить"
 
-#: templates/index.html:149
+#: templates/index.html:147
 msgid "Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google"
 msgstr "Этот сайт защищен reCAPTCHA, и он регулируется"
 
-#: templates/index.html:151
+#: templates/index.html:149
 msgid "Konfidencialitātes Politika"
 msgstr "Политикой Конфиденциальности"
 
-#: templates/index.html:151
+#: templates/index.html:149
 msgid "un"
-msgstr "Google и"
+msgstr "Google и правилами"
 
-#: templates/index.html:153
+#: templates/index.html:151
 msgid "Pakalpojumu Sniegšanas noteikumi"
-msgstr "Правилами предоставления услуг"
+msgstr "Предоставления Услуг"
 
-#: templates/inc/_nav.html:14 templates/index.html:186
+#: templates/inc/_nav.html:14 templates/index.html:182
 msgid "Kontakti"
 msgstr "Контакты"
 
-#: templates/index.html:187
+#: templates/index.html:183
 msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
 msgstr "Принимаем заказы по всей Латвии и вне её"
 
-#: templates/index.html:192
+#: templates/index.html:188
 msgid "Tel.nr"
 msgstr "Номер"
 
-#: templates/index.html:200
+#: templates/index.html:196
 msgid "Vienotais reģ.nr"
 msgstr "Рег. но"
 
-#: templates/index.html:204
+#: templates/index.html:200
 msgid "Juridiskā adrese"
 msgstr "Юр. адрес"
 
-#: templates/index.html:208
+#: templates/index.html:204
 msgid "Atrodamies"
 msgstr "Находимся в"
 
-#: templates/index.html:209
+#: templates/index.html:205
 msgid "Rīgā un Rēzeknes novadā"
 msgstr "Риге и Резекненском районе"
 
