@@ -88,17 +88,11 @@
 		<a name="communication" class="anchor-pc"></a>
 		<div class="col-12 col-md-6 col-xxl-6 row-5-col-1 d-flex flex-column align-items-center">
 			<h2 class="text-center fw-bold">{{ _('Saziņa') }}</h2>
-			{% with messages = get_flashed_messages(with_categories=true) %}
-			{% if messages %}
-			{% for category, message in messages %}
-			<div class="alert alert-{{ category }} alert-dismissible rounded-pill fw-bold" role="alert">
-				{{ message }}
-				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			<div id="loader" class="text-center d-none">
+				<div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
 			</div>
-			{% endfor %}
-			{% endif %}
-			{% endwith %}
-			<form method="post" class="was-validated" id="contact-form">
+			<div id="alert" class="d-none" role="alert"></div>
+			<form method="post" class="was-validated" id="form">
 				{{ form.hidden_tag() }}
 				<div class="form-floating">
 					{{ form.name() }}

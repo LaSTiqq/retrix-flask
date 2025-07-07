@@ -41,21 +41,7 @@
 	<script src="https://kit.fontawesome.com/17b4039aee.js" crossorigin="anonymous"></script>
 	<script
 		src="https://www.google.com/recaptcha/api.js?render=6LdceGonAAAAANTvW5D13lPX4Ac8pNVo_X0MLdUc&hl={{ current_locale }}"></script>
-	<script>
-		grecaptcha.ready(function () {
-			document.getElementById("contact-form").addEventListener(
-				"submit", function (event) {
-					event.preventDefault();
-					grecaptcha.execute("6LdceGonAAAAANTvW5D13lPX4Ac8pNVo_X0MLdUc", {
-						action: "contact"
-					}).then(function (token) {
-						document.getElementById("g-recaptcha-response").value = token;
-						document.getElementById("contact-form").submit();
-					});
-				}, false);
-		});
-	</script>
-	<script src="{{ static_url_for('static', filename='js/script.js') }}"></script>
+	<script src="{{ static_url_for('static', filename='js/script.js') }}" defer></script>
 	<script src="{{ url_for('static', filename='js/modernizr-custom.js') }}"></script>
 </body>
 
