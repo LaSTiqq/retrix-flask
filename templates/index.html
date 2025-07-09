@@ -86,65 +86,67 @@
 <section class="contact_us">
 	<div class="row">
 		<a name="communication" class="anchor-pc"></a>
-		<div class="col-12 col-md-6 col-xxl-6 row-5-col-1 d-flex flex-column align-items-center">
+		<div class="col-12 col-md-6 col-xxl-6 row-5-col-1">
 			<h2 class="text-center fw-bold">{{ _('Saziņa') }}</h2>
-			<div id="loader" class="text-center d-none">
-				<div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
-			</div>
-			<div id="alert" class="d-none" role="alert"></div>
-			<form method="post" class="was-validated" id="form">
-				{{ form.hidden_tag() }}
-				<div class="form-floating">
-					{{ form.name() }}
-					<label for="name">{{ _('Vārds') }}<span class="text-danger">*</span></label>
-					<div class="valid-feedback">
-						OK!
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-11 col-lg-10 col-xl-9">
+					<div id="loader" class="text-center d-none">
+						<div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
 					</div>
-					<div class="invalid-feedback">
-						{{ _('Lūdzu, ievadiet derīgu vārdu!') }}
-					</div>
+					<div id="alert" class="d-none" role="alert"></div>
+					<form method="post" class="was-validated" id="form">
+						{{ form.hidden_tag() }}
+						<div class="form-floating">
+							{{ form.name() }}
+							<label for="name">{{ _('Vārds') }}<span class="text-danger">*</span></label>
+							<div class="valid-feedback">
+								OK!
+							</div>
+							<div class="invalid-feedback">
+								{{ _('Lūdzu, ievadiet derīgu vārdu!') }}
+							</div>
+						</div>
+						<div class="form-floating">
+							{{ form.email() }}
+							<label for="email">{{ _('E-pasts') }}<span class="text-danger">*</span></label>
+							<div class="valid-feedback">
+								OK!
+							</div>
+							<div class="invalid-feedback">
+								{{ _('Lūdzu, ievadiet derīgu e-pasta adresi!') }}
+							</div>
+						</div>
+						<div class="form-floating">
+							{{ form.subject() }}
+							<label for="subject">{{ _('Temats') }}<span class="text-danger">*</span></label>
+							<div class="valid-feedback">
+								OK!
+							</div>
+							<div class="invalid-feedback">
+								{{ _('Lūdzu, ievadiet derīgu tematu!') }}
+							</div>
+						</div>
+						<div class="form-floating">
+							{{ form.message() }}
+							<label for="message">{{ _('Ziņojums') }}<span class="text-danger">*</span></label>
+							<div class="valid-feedback">
+								OK!
+							</div>
+							<div class="invalid-feedback">
+								{{ _('Lūdzu, ievadiet derīgu ziņu vismaz 20 simbolu garumā!') }}
+							</div>
+						</div>
+						<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+						<button type="submit" class="btn btn-dark d-block mx-auto my-2">{{ _('Nosūtīt') }}</button>
+					</form>
+					<small class="text-center d-block fw-bold mb-2 mb-xl-0">
+						{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
+						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
+							{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
+						<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
+							{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
+					</small>
 				</div>
-				<div class="form-floating">
-					{{ form.email() }}
-					<label for="email">{{ _('E-pasts') }}<span class="text-danger">*</span></label>
-					<div class="valid-feedback">
-						OK!
-					</div>
-					<div class="invalid-feedback">
-						{{ _('Lūdzu, ievadiet derīgu e-pasta adresi!') }}
-					</div>
-				</div>
-				<div class="form-floating">
-					{{ form.subject() }}
-					<label for="subject">{{ _('Temats') }}<span class="text-danger">*</span></label>
-					<div class="valid-feedback">
-						OK!
-					</div>
-					<div class="invalid-feedback">
-						{{ _('Lūdzu, ievadiet derīgu tematu!') }}
-					</div>
-				</div>
-				<div class="form-floating">
-					{{ form.message() }}
-					<label for="message">{{ _('Ziņojums') }}<span class="text-danger">*</span></label>
-					<div class="valid-feedback">
-						OK!
-					</div>
-					<div class="invalid-feedback text-center">
-						{{ _('Lūdzu, ievadiet derīgu ziņu vismaz 20 simbolu garumā!') }}
-					</div>
-				</div>
-				<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-				<button type="submit" class="btn btn-dark d-block mx-auto my-2">{{ _('Nosūtīt') }}</button>
-			</form>
-			<div class="col-md-8">
-				<small class="text-center d-block fw-bold mb-2 mb-xl-0">
-					{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
-					<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
-						{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
-					<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
-						{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
-				</small>
 			</div>
 		</div>
 		<div class="col-12 col-md-3 col-xxl-2 row-5-col-2">
