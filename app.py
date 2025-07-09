@@ -70,7 +70,7 @@ def send_ajax():
             return jsonify({"status": "warning", "message": _("Captcha pārbaude netika izieta. Mēģiniet vēlreiz.")}), 400
 
         html_content = render_template(
-            "email.html", name=form.name.data, sender=form.email.data, content=form.message.data)
+            "email.html", name=form.name.data, email=form.email.data, message=form.message.data)
         text_content = re.sub(r"<[^>]+>", "", html_content)
 
         try:
