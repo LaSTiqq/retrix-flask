@@ -140,13 +140,15 @@
 						<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-dark d-block mx-auto my-2">{{ _('Nosūtīt') }}</button>
 					</form>
-					<small class="text-center d-block fw-bold mb-2 mb-xl-0">
-						{{ _('Šī vietne ir aizsargāta ar reCAPTCHA, un uz to attiecas Google') }}
-						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">
-							{{ _('Konfidencialitātes Politika') }}</a> {{ _('un') }}
-						<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">
-							{{ _('Pakalpojumu Sniegšanas noteikumi') }}</a>.
-					</small>
+					<div class="text-center mb-0 mb-md-2 mb-xl-0">
+						<small class="fw-bold">
+							This site is protected by reCAPTCHA and the Google
+							<a href="https://policies.google.com/privacy" target="_blank" rel="norefferer"
+								class="focus-ring">Privacy Policy</a> and
+							<a href="https://policies.google.com/terms" target="_blank" rel="norefferer"
+								class="focus-ring">Terms of Service</a> apply.
+						</small>
+					</div>
 				</div>
 			</div>
 		</div>

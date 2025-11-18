@@ -119,7 +119,7 @@ def page_not_found(e):
         "error.html",
         error_code=404,
         error_message="Page Not Found",
-        error_comment=_("Jūs esat nokļuvis uz neeksistējošu lapu.")
+        error_comment=_("Šī lapa neeksistē.")
     ), 404
 
 
@@ -129,6 +129,5 @@ def internal_server_error(e):
         "error.html",
         error_code=500,
         error_message="Internal Server Error",
-        error_comment=_(
-            "Radās kļūda un serveris nespēja izpildīt Jūsu pieprasījumu.")
+        error_comment=_("Serveris nespēja izpildīt Jūsu pieprasījumu.")
     ), 500
