@@ -5,17 +5,16 @@ const scrollFunction = () => {
   const scrolled =
     document.body.scrollTop > 50 || document.documentElement.scrollTop > 50;
 
-  const setLogoSize = (logo, width, height) => {
+  const setLogoSize = (logo, width) => {
     if (logo) {
       logo.style.width = width;
-      logo.style.height = height;
     }
   };
 
   if (scrolled) {
-    setLogoSize(logo, "130px", "66px");
+    setLogoSize(logo, "128px");
   } else {
-    setLogoSize(logo, "158px", "80px");
+    setLogoSize(logo, "158px");
   }
 };
 
