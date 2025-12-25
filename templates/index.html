@@ -95,7 +95,7 @@
 						<div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
 					</div>
 					<div id="alert" class="d-none" role="alert"></div>
-					<form method="post" class="was-validated" id="form">
+					<form class="needs-validation" novalidate id="form">
 						{{ form.hidden_tag() }}
 						<div class="form-floating">
 							{{ form.name() }}
@@ -114,7 +114,7 @@
 								OK!
 							</div>
 							<div class="invalid-feedback">
-								{{ _('Lūdzu, ievadiet derīgu e-pasta adresi!') }}
+								{{ _('Lūdzu, ievadiet derīgu e-pasta adresi!') }} ****@***.**
 							</div>
 						</div>
 						<div class="form-floating">
@@ -143,10 +143,10 @@
 					<div class="text-center mb-0 mb-md-2 mb-xl-0">
 						<small class="fw-bold">
 							This site is protected by reCAPTCHA and the Google
-							<a href="https://policies.google.com/privacy" target="_blank" rel="norefferer"
-								class="focus-ring">Privacy Policy</a> and
-							<a href="https://policies.google.com/terms" target="_blank" rel="norefferer"
-								class="focus-ring">Terms of Service</a> apply.
+							<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy
+								Policy</a> and
+							<a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of
+								Service</a> apply.
 						</small>
 					</div>
 				</div>
