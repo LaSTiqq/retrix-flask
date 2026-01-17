@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+# Copyright (C) 2026 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-11-18 23:08+0200\n"
+"POT-Creation-Date: 2026-01-17 21:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,27 +45,15 @@ msgstr ""
 msgid "Vārds"
 msgstr ""
 
-#: forms.py:15
-msgid "Jānis"
-msgstr ""
-
-#: forms.py:23 forms.py:27 templates/index.html:112 templates/index.html:193
+#: forms.py:22 forms.py:26 templates/index.html:112 templates/index.html:193
 msgid "E-pasts"
 msgstr ""
 
-#: forms.py:29
-msgid "janis.celotajs@gmail.com"
-msgstr ""
-
-#: forms.py:37 forms.py:41 templates/index.html:122
+#: forms.py:35 forms.py:39 templates/index.html:122
 msgid "Temats"
 msgstr ""
 
-#: forms.py:43
-msgid "Apgaismojums virtuvē"
-msgstr ""
-
-#: forms.py:51 forms.py:55 templates/index.html:132
+#: forms.py:48 forms.py:52 templates/index.html:132
 msgid "Ziņojums"
 msgstr ""
 
