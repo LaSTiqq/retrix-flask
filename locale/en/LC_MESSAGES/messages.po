@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-01-17 21:54+0200\n"
+"POT-Creation-Date: 2026-02-06 00:19+0200\n"
 "PO-Revision-Date: 2025-06-21 21:41+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -46,7 +46,7 @@ msgstr "Server could not fulfill your request."
 msgid "Vārds"
 msgstr "Name"
 
-#: forms.py:22 forms.py:26 templates/index.html:112 templates/index.html:193
+#: forms.py:22 forms.py:26 templates/index.html:112 templates/index.html:197
 msgid "E-pasts"
 msgstr "Email"
 
@@ -81,8 +81,8 @@ msgid "Atgriezties"
 msgstr "Go back"
 
 #: templates/index.html:14 templates/index.html:45 templates/index.html:50
-#: templates/index.html:65 templates/index.html:72 templates/index.html:159
-#: templates/index.html:164 templates/index.html:178
+#: templates/index.html:65 templates/index.html:72 templates/index.html:163
+#: templates/index.html:168 templates/index.html:182
 msgid "LED apgaismojuma piemērs"
 msgstr "LED lighting example"
 
@@ -174,33 +174,59 @@ msgstr "Please enter a valid message at least 20 characters long!"
 msgid "Nosūtīt"
 msgstr "Submit"
 
-#: templates/inc/_nav.html:14 templates/index.html:183
+#: templates/index.html:145
+msgid "Iepazīstaties ar mūsu"
+msgstr ""
+
+#: templates/index.html:147
+#, fuzzy
+msgid "Privātuma politiku"
+msgstr "Privacy policy"
+
+#: templates/inc/_nav.html:14 templates/index.html:187
 msgid "Kontakti"
 msgstr "Contacts"
 
-#: templates/index.html:184
+#: templates/index.html:188
 msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
 msgstr "We accept orders throughout Latvia and beyond"
 
-#: templates/index.html:189
+#: templates/index.html:193
 msgid "Tel.nr"
 msgstr "Phone"
 
-#: templates/index.html:197
+#: templates/index.html:201
 msgid "Vienotais reģ.nr"
 msgstr "Reg. no."
 
-#: templates/index.html:201
+#: templates/index.html:205
 msgid "Juridiskā adrese"
 msgstr "Legal address"
 
-#: templates/index.html:205
+#: templates/index.html:209
 msgid "Atrodamies"
 msgstr "Located in"
 
-#: templates/index.html:206
+#: templates/index.html:210
 msgid "Rīgā un Rēzeknes novadā"
 msgstr "Riga and the Rezekne district"
+
+#: templates/inc/_foo.html:8 templates/modals.html:6
+msgid "Privātuma politika"
+msgstr "Privacy policy"
+
+#: templates/modals.html:13
+msgid ""
+"Lai aizsargātu mūsu tīmekļa vietni un pakalpojumus no mēstulēm un "
+"automatizētas ļaunprātīgas\n"
+"                    izmantošanas, mēs izmantojam reCAPTCHA pakalpojumu. "
+"Šis pakalpojums analizē lietotāju uzvedību un\n"
+"                    ierīces datus (piemēram, IP adreses un mijiedarbības "
+"modeļus), lai atšķirtu reālus lietotājus no\n"
+"                    automatizētiem botiem. Šos datus apstrādā Google. "
+"Dati tiek izmantoti tikai drošības un\n"
+"                    krāpniecības novēršanas nolūkos."
+msgstr "To protect our website from spam and automated abuse, we use the reCAPTCHA service. This service analyzes user behavior and device data (such as IP addresses and interaction patterns) to distinguish between human users and automated bots. This data is processed by Google only for security and fraud prevention purposes."
 
 #: templates/inc/_foo.html:5
 msgid "Izstrādātājs"
