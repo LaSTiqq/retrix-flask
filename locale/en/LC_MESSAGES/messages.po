@@ -176,10 +176,9 @@ msgstr "Submit"
 
 #: templates/index.html:145
 msgid "Iepazīstaties ar mūsu"
-msgstr ""
+msgstr "Get to know our"
 
 #: templates/index.html:147
-#, fuzzy
 msgid "Privātuma politiku"
 msgstr "Privacy policy"
 

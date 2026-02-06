@@ -179,12 +179,11 @@ msgstr "Отправить"
 
 #: templates/index.html:145
 msgid "Iepazīstaties ar mūsu"
-msgstr ""
+msgstr "Ознакомьтесь с нашей"
 
 #: templates/index.html:147
-#, fuzzy
 msgid "Privātuma politiku"
-msgstr "Конфиденциальность"
+msgstr "Конфиденциальностью"
 
 #: templates/inc/_nav.html:14 templates/index.html:187
 msgid "Kontakti"
