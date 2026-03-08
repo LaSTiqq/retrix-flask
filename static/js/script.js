@@ -12,9 +12,9 @@ const scrollFunction = () => {
   };
 
   if (scrolled) {
-    setLogoSize(logo, "128px");
-  } else {
     setLogoSize(logo, "158px");
+  } else {
+    setLogoSize(logo, "188px");
   }
 };
 
@@ -98,7 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (result.status !== "info") {
               form.reset();
               form.classList.remove("was-validated");
-              fields.forEach((f) => f.classList.remove("is-valid", "is-invalid"));
+              fields.forEach((f) =>
+                f.classList.remove("is-valid", "is-invalid"),
+              );
             }
           } catch (err) {
             showAlert("Radās kļūda! Mēģiniet vēlreiz.", "danger");
@@ -126,4 +128,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 4000);
   }
 });
-
