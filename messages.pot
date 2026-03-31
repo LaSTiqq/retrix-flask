@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-06 20:40+0200\n"
+"POT-Creation-Date: 2026-03-31 22:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Vārds"
 msgstr ""
 
-#: forms.py:22 forms.py:26 templates/index.html:112 templates/index.html:197
+#: forms.py:22 forms.py:26 templates/index.html:112 templates/index.html:192
 msgid "E-pasts"
 msgstr ""
 
@@ -77,8 +77,8 @@ msgid "Atgriezties"
 msgstr ""
 
 #: templates/index.html:14 templates/index.html:45 templates/index.html:50
-#: templates/index.html:65 templates/index.html:72 templates/index.html:163
-#: templates/index.html:168 templates/index.html:182
+#: templates/index.html:65 templates/index.html:72 templates/index.html:158
+#: templates/index.html:163 templates/index.html:177
 msgid "LED apgaismojuma piemērs"
 msgstr ""
 
@@ -168,44 +168,36 @@ msgstr ""
 msgid "Nosūtīt"
 msgstr ""
 
-#: templates/index.html:145
-msgid "Iepazīstaties ar mūsu"
+#: templates/inc/_foo.html:9 templates/index.html:147 templates/modals.html:6
+msgid "Privātuma politika"
 msgstr ""
 
-#: templates/index.html:147
-msgid "Privātuma politiku"
-msgstr ""
-
-#: templates/inc/_nav.html:14 templates/index.html:187
+#: templates/inc/_nav.html:14 templates/index.html:182
 msgid "Kontakti"
 msgstr ""
 
-#: templates/index.html:188
+#: templates/index.html:183
 msgid "Pieņemam pasūtījumus visā Latvijā un ārpus tās"
 msgstr ""
 
-#: templates/index.html:193
+#: templates/index.html:188
 msgid "Tel.nr"
 msgstr ""
 
-#: templates/index.html:201
+#: templates/index.html:196
 msgid "Vienotais reģ.nr"
 msgstr ""
 
-#: templates/index.html:205
+#: templates/index.html:200
 msgid "Juridiskā adrese"
 msgstr ""
 
-#: templates/index.html:209
+#: templates/index.html:204
 msgid "Atrodamies"
 msgstr ""
 
-#: templates/index.html:210
+#: templates/index.html:205
 msgid "Rīgā un Rēzeknes novadā"
-msgstr ""
-
-#: templates/inc/_foo.html:8 templates/modals.html:6
-msgid "Privātuma politika"
 msgstr ""
 
 #: templates/modals.html:13
@@ -213,7 +205,7 @@ msgid ""
 "Lai aizsargātu mūsu tīmekļa vietni un pakalpojumus no mēstulēm un "
 "automatizētas ļaunprātīgas\n"
 "                    izmantošanas, mēs izmantojam reCAPTCHA pakalpojumu. "
-"Šis pakalpojums analizē lietotāju uzvedību un\n"
+"Tas analizē lietotāju uzvedību un\n"
 "                    ierīces datus (piemēram, IP adreses un mijiedarbības "
 "modeļus), lai atšķirtu reālus lietotājus no\n"
 "                    automatizētiem botiem. Šos datus apstrādā Google. "
