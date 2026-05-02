@@ -1,6 +1,6 @@
-<nav class="navbar navbar-light fixed-top navbar-expand-lg">
+<nav class="navbar bg-dark fixed-top navbar-expand-lg">
 	<div class="container-fluid">
-		<a class="navbar-brand py-0 pe-3" href="/">
+		<a class="navbar-brand" href="/">
 			<img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="Retrix logo" id="logo" />
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -17,21 +17,21 @@
 				<ul class="d-flex languages mt-2 mt-lg-0 mb-0 ps-0">
 					<li class="me-lg-0">
 						<button type="button" value="lv"
-							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'lv' %}active{% endif %}"
+							class="btn btn-outline-light btn-sm position-relative {% if get_locale() == 'lv' %}active{% endif %}"
 							onclick="location.href='/setlang?lang=lv'">
 							Latviešu
 						</button>
 					</li>
 					<li class="mx-lg-0">
 						<button type="button" value="en"
-							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'en' %}active{% endif %}"
+							class="btn btn-outline-light btn-sm position-relative {% if get_locale() == 'en' %}active{% endif %}"
 							onclick="location.href='/setlang?lang=en'">
 							English
 						</button>
 					</li>
 					<li class="ms-lg-0">
 						<button type="button" value="ru"
-							class="btn btn-outline-dark btn-sm position-relative {% if get_locale() == 'ru' %}active{% endif %}"
+							class="btn btn-outline-light btn-sm position-relative {% if get_locale() == 'ru' %}active{% endif %}"
 							onclick="location.href='/setlang?lang=ru'">
 							Русский
 						</button>

@@ -12,9 +12,9 @@ const scrollFunction = () => {
   };
 
   if (scrolled) {
-    setLogoSize(logo, "235px");
+    setLogoSize(logo, "180px");
   } else {
-    setLogoSize(logo, "270px");
+    setLogoSize(logo, "220px");
   }
 };
 
